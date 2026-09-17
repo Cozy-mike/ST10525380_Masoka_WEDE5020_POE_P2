@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Donate | Paws &amp; Care Animal Shelter
+    </title>
+
+    <meta name="description"
+          content="Make a once-off or monthly donation to Paws & Care Animal Shelter, or give supplies from our wishlist.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Lato:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header class="site-header">
+
+    <nav class="nav">
+
+        <!-- LOGO -->
+        <a href="index.html" class="brand">Paws &amp; Care</a>
+
+
+        <!-- NAVIGATION LINKS -->
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="adopt.html">
+                    Adopt
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="donate.html"
+                   class="active">
+                    Donate
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+            <li class="nav-cta">
+
+                <a href="donate.html"
+                   class="btn btn-primary">
+
+                    Donate Now
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
+
+<main id="main">
+
+
+    <!-- INTRODUCTION -->
+
+    <section style="padding-bottom:0;">
+
+        <div class="container">
+
+            <div class="section-head left">
+
+
+                <span class="eyebrow">
+
+                    Your gift, at work
+
+                </span>
+
+
+                <h1>
+
+                    Every donation buys another day of care
+
+                </h1>
+
+
+                <p>
+
+                    R150 covers a week of food for one dog.
+                    R500 covers a set of vaccinations.
+                    Whatever you can give goes straight
+                    into feeding, treating and sheltering
+                    animals like Buddy, Miso and Duke.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         DONATION SECTION
+    ========================= -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="grid grid-2"
+                 style="align-items:flex-start;
+                        gap:40px;">
+
+
+                <!-- =========================
+                     DONATION FORM
+                ========================= -->
+
+                <div class="form-card">
+
+
+                    <h2 class="mt-0">
+
+                        Make a donation
+
+                    </h2>
+
+
+                    <!-- FREQUENCY -->
+
+                    <div class="donate-toggle"
+                         role="group"
+                         aria-label="Donation frequency">
+
+
+                        <button type="button"
+                                class="active"
+                                data-freq="once">
+
+                            Once-off
+
+                        </button>
+
+
+                        <button type="button"
+                                data-freq="monthly">
+
+                            Monthly
+
+                        </button>
+
+
+                    </div>
+
+
+                    <!-- DONATION FORM -->
+
+                    <form data-demo-form
+                          data-donate-form>
+
+
+                        <!-- FREQUENCY VALUE -->
+
+                        <input type="hidden"
+                               data-frequency-value
+                               value="once">
+
+
+
+                        <!-- DONATION AMOUNTS -->
+
+                        <div class="donate-options">
+
+
+                            <button type="button"
+                                    class="donate-amount"
+                                    data-amount="150">
+
+                                R150
+
+                            </button>
+
+
+                            <button type="button"
+                                    class="donate-amount selected"
+                                    data-amount="350">
+
+                                R350
+
+                            </button>
+
+
+                            <button type="button"
+                                    class="donate-amount"
+                                    data-amount="750">
+
+                                R750
+
+                            </button>
+
+
+                        </div>
+
+
+
+                        <!-- CUSTOM AMOUNT -->
+
+                        <div class="field">
+
+                            <label for="amount">
+
+                                Amount (ZAR)
+
+                            </label>
+
+
+                            <input type="number"
+                                   id="amount"
+                                   name="amount"
+                                   min="10"
+                                   value="350"
+                                   data-custom-amount
+                                   required>
+
+                        </div>
+
+
+
+                        <!-- NAME + EMAIL -->
+
+                        <div class="field-row">
+
+
+                            <div class="field">
+
+                                <label for="donor-name">
+
+                                    Full name
+
+                                </label>
+
+
+                                <input type="text"
+                                       id="donor-name"
+                                       name="name"
+                                       required>
+
+                            </div>
+
+
+
+                            <div class="field">
+
+                                <label for="donor-email">
+
+                                    Email
+
+                                </label>
+
+
+                                <input type="email"
+                                       id="donor-email"
+                                       name="email"
+                                       required>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- PAYMENT NOTE -->
+
+                        <p class="form-note">
+
+                            Secure payment is processed
+                            through PayFast at checkout.
+                            This demo form does not process
+                            real payments.
+
+                        </p>
+
+
+
+                        <!-- SUBMIT -->
+
+                        <button type="submit"
+                                class="btn btn-primary"
+                                style="margin-top:8px;">
+
+                            Continue to secure payment
+
+                        </button>
+
+
+
+                        <!-- SUCCESS MESSAGE -->
+
+                        <div class="form-success"
+                             role="status">
+
+                            Thank you!
+                            Your donation support means
+                            a great deal to our animals.
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+
+
+                <!-- =========================
+                     SUPPLIES + QUOTE
+                ========================= -->
+
+                <div>
+
+
+                    <!-- SUPPLIES -->
+
+                    <div class="card"
+                         style="margin-bottom:24px;">
+
+                        <div class="card-body">
+
+
+                            <h3>
+
+                                Give supplies instead
+
+                            </h3>
+
+
+                            <p>
+
+                                We're always low on the
+                                essentials. Drop off at the
+                                shelter, or contact us to
+                                arrange collection for larger
+                                donations.
+
+                            </p>
+
+
+                            <ul class="supply-list">
+
+
+                                <li>
+                                    Dry dog &amp; cat food
+                                </li>
+
+
+                                <li>
+                                    Blankets &amp; towels
+                                </li>
+
+
+                                <li>
+                                    Cat litter
+                                </li>
+
+
+                                <li>
+                                    Leashes &amp; collars
+                                </li>
+
+
+                                <li>
+                                    Cleaning supplies
+                                    &amp; disinfectant
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- QUOTE -->
+
+                    <div class="card quote-card">
+
+                        <div class="card-body">
+
+
+                            <p style="margin:0;">
+
+                                "Buddy came to us underweight
+                                and afraid of raised hands.
+                                Six weeks of consistent food
+                                and care later, he's
+                                unrecognisable."
+
+                            </p>
+
+
+                            <p class="quote-attr">
+
+                                — Shelter staff
+
+                            </p>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WHERE MONEY GOES
+    ========================= -->
+
+    <section class="section-blue">
+
+        <div class="container text-center">
+
+
+            <h2>
+
+                Where your money goes
+
+            </h2>
+
+
+            <div class="grid grid-3"
+                 style="margin-top:20px;">
+
+
+                <!-- FOOD -->
+
+                <div class="card">
+
+                    <div class="card-body">
+
+
+                        <h3 style="color:var(--blue-grey-dark);">
+
+                            Food &amp; shelter
+
+                        </h3>
+
+
+                        <p>
+
+                            Daily meals, bedding and
+                            kennel upkeep for every animal
+                            in our care.
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- VETERINARY -->
+
+                <div class="card">
+
+                    <div class="card-body">
+
+
+                        <h3 style="color:var(--blue-grey-dark);">
+
+                            Veterinary care
+
+                        </h3>
+
+
+                        <p>
+
+                            Vaccinations, sterilisations,
+                            and treatment for sick or injured
+                            animals.
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RESCUE -->
+
+                <div class="card">
+
+                    <div class="card-body">
+
+
+                        <h3 style="color:var(--blue-grey-dark);">
+
+                            Rescue operations
+
+                        </h3>
+
+
+                        <p>
+
+                            Responding to stray reports and
+                            transporting animals safely
+                            to the shelter.
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+            <!-- BRAND -->
+            <div>
+
+                <div class="footer-brand">
+                    Paws &amp; Care
+                </div>
+
+                <p style="color:rgba(255,255,255,0.7);">
+
+                    Every paw deserves a safe home.
+                    A registered non-profit animal
+                    shelter based in Pretoria,
+                    South Africa.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- EXPLORE -->
+
+            <div>
+
+                <h4>
+                    Explore
+                </h4>
+
+
+                <ul>
+
+                    <li>
+                        <a href="adopt.html">
+                            Adopt
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="donate.html">
+                            Donate
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- CONTACT -->
+
+            <div>
+
+                <h4>
+                    Contact
+                </h4>
+
+
+                <ul>
+
+                    <li>
+                        <a href="contact.html">
+                            Visit or call us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- SOCIAL MEDIA -->
+
+            <div>
+
+                <h4>
+                    Follow along
+                </h4>
+
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Facebook
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Instagram
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <span>
+
+                &copy;
+
+                <span data-year>
+                    2026
+                </span>
+
+                Paws &amp; Care Animal Shelter.
+
+                NPO,
+                Pretoria,
+                South Africa.
+
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
